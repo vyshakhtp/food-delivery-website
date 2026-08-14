@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Foodie</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="food.css">
+    </head>
+
+    <body>
+        
+            
+            <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-pizza-slice"></i>
+            Foodie
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#food">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="food">
+
+            <!-- Location -->
+            <div class="location-box me-lg-4 my-3 my-lg-0">
+
+                <i class="bi bi-geo-alt-fill"></i>
+
+                <div class="location-text">
+
+                    <small>Delivered to</small>
+
+                    <div class="dropdown">
+
+                        <button class="btn dropdown-toggle p-0 border-0"
+                                id="locationBtn"
+                                data-bs-toggle="dropdown">
+                            Kochi
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Kochi</a></li>
+                            <li><a class="dropdown-item" href="#">Ernakulam</a></li>
+                            <li><a class="dropdown-item" href="#">Bekal</a></li>
+                            <li><a class="dropdown-item" href="#">Varkala</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Menu -->
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#restaurent">Restaurant</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#offer">Offers</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="food_login.html">Login</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+            <section id="home" >
+
+                        <div class="container-fluid position-relative back-img">
+                            <div class="container-fluid position-absolute home-content">
+                                <h3>Delicious Food,</h3>
+                                <h3>Delivered to you</h3>
+                                <p>Order from your favourite restaurant</p>
+                                <p>and get it delivered fast</p>
+                            
+                                <form class="search-form  d-flex gap-4" role="search">
+                                    <input class="form-control" type="search" placeholder="Search for food or restaurants..." aria-label="search">
+                                    <button class="btn btn-outline-primary px-4" type="submit">Find Food</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid top-cat mt-4">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h2 class="top-cat-title fw-bold">Top Categories</h2>
+                                <a href="#" class="text-decoration-none text-warning fw-bold">View All</a>
+                            </div>
+
+                            <div class="row g-4">
+
+                                <div class="col-lg-2 col-md-4 col-6">
+                                    <div class="card category-card">
+                                        <img src="images/pizza.png" class="img-fluid mx-auto d-block" alt="Pizza">
+                                        <div class="card-body text-center">
+                                            <h5>Pizza</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-2 col-md-4 col-6">
+                                    <div class="card category-card">
+                                        <img src="images/burger.png" class="img-fluid mx-auto d-block" alt="Burger">
+                                        <div class="card-body text-center">
+                                            <h5>Burger</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-2 col-md-4 col-6">
+                                    <div class="card category-card">
+                                        <img src="images/biriyani.png" class="img-fluid mx-auto d-block" alt="Biryani">
+                                        <div class="card-body text-center">
+                                            <h5>Biryani</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-2 col-md-4 col-6">
+                                    <div class="card category-card">
+                                        <img src="images/thali.jpg" class="img-fluid mx-auto d-block" alt="Indian">
+                                        <div class="card-body text-center">
+                                            <h5>Indian</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-2 col-md-4 col-6">
+                                    <div class="card category-card">
+                                        <img src="images/chinese.png" class="img-fluid mx-auto d-block" alt="Chinese">
+                                        <div class="card-body text-center">
+                                            <h5>Chinese</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-2 col-md-4 col-6">
+                                    <div class="card category-card">
+                                        <img src="images/dessert.png" class="img-fluid mx-auto d-block" alt="Desserts">
+                                        <div class="card-body text-center">
+                                            <h5>Desserts</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>      
+            </section>
+
+            <section id="restaurent">
+                <div class="container-fluid mt-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="popular-rest fw-bold">Popular Restaurents</h4>
+                        <a  class="text-decoration-none fw-bold text-warning" data-bs-toggle="collapse" href="#more-rest">View All</a>
+                    </div>
+                    <div class="row g-4">
+
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <div class="card rest-card shadow-sm">
+                                        <img src="images/pizza-hut.jpg" class="card-img-top" alt="Pizza">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title fw-bold">Pizza Hut</h5>
+                                                <span class="text-warning">
+                                                <i class="bi bi-star-fill"></i> 4.8
+                                            </span>
+                                            </div>
+                                            <p class="text-muted mb-2">Pizza,Burger</small>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center p-2">
+                                            
+                                            <span class="text-muted">
+                                                <i class="bi bi-clock"></i> 25-30 min
+                                            </span>
+                                            <small class="text-success">Free Delivery</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <div class="card rest-card shadow-sm">
+                                        <img src="images/burger.jpg" class="card-img-top" alt="Pizza">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title fw-bold">Big Bun</h5>
+                                                <span class="text-warning">
+                                                <i class="bi bi-star-fill"></i> 4.5
+                                            </span>
+                                            </div>
+                                            <p class="text-muted mb-2">Burgers,Fast Food</small>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center p-2">
+                                            
+                                            <span class="text-muted">
+                                                <i class="bi bi-clock"></i> 20-25 min
+                                            </span>
+                                            <small class="text-success">Free Delivery</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <div class="card rest-card shadow-sm">
+                                        <img src="images/biriyani-hut.jpg" class="card-img-top" alt="Pizza">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title fw-bold">Kunjakante Biriyani</h5>
+                                                <span class="text-warning">
+                                                <i class="bi bi-star-fill"></i> 4.8
+                                            </span>
+                                            </div>
+                                            <p class="text-muted mb-2">Biriyani</small>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center p-2">
+                                            
+                                            <span class="text-muted">
+                                                <i class="bi bi-clock"></i> 10-15 min
+                                            </span>
+                                            <small class="text-success">Free Delivery</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <div class="card rest-card shadow-sm">
+                                        <img src="images/chicken.jpg" class="card-img-top" alt="Pizza">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title fw-bold">Thoufeek Restaurant</h5>
+                                                <span class="text-warning">
+                                                <i class="bi bi-star-fill"></i> 4.4
+                                            </span>
+                                            </div>
+                                            <p class="text-muted mb-2">Veg,Non-Veg items</small>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center p-2">
+                                            
+                                            <span class="text-muted">
+                                                <i class="bi bi-clock"></i> 25-30 min
+                                            </span>
+                                            <small class="text-success">Free Delivery</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="more-rest">
+                                    <div class="row g-4">
+
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="card rest-card shadow-sm">
+                                                <img src="images/chinese food.jpg" class="card-img-top" alt="Pizza">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h5 class="card-title fw-bold">Sagar</h5>
+                                                        <span class="text-warning">
+                                                        <i class="bi bi-star-fill"></i> 4.8
+                                                    </span>
+                                                    </div>
+                                                    <p class="text-muted mb-2">North Indian,Chinese</small>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center p-2">
+                                                    
+                                                    <span class="text-muted">
+                                                        <i class="bi bi-clock"></i> 30-35 min
+                                                    </span>
+                                                    <small class="text-success">Free Delivery</small>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="card rest-card shadow-sm">
+                                                <img src="images/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai.jpg" class="card-img-top" alt="Pizza">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h5 class="card-title fw-bold">Ambadi</h5>
+                                                        <span class="text-warning">
+                                                        <i class="bi bi-star-fill"></i> 4.1
+                                                    </span>
+                                                    </div>
+                                                    <p class="text-muted mb-2">Non-Veg</small>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center p-2">
+                                                    
+                                                    <span class="text-muted">
+                                                        <i class="bi bi-clock"></i> 25-30 min
+                                                    </span>
+                                                    <small class="text-success">Free Delivery</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                </div>
+            </section>
+
+            <section id="offer">
+                <div class="container mt-4">
+                    <div class="offer-title">
+                        <div class=" title-card">
+                            <div class="title">
+                                <h1 class=" fw-bold p-2" id="title" >
+                                    Exclusive Offers
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-7 col-md-10 col-12">
+                            <div class="offer-card-box d-flex flex-column">
+                            <div class="card offer-card ">
+                                <div class="row">
+                                    <div class="col-lg-5 ">
+                                        <img src="images/pizza-hut.jpg" style="width:200px;">
+                                    </div>
+                                    <div class="col-lg-7 ">
+                                        <h3>Flat 40% off</h3>
+                                        <p>Flat 40% off on all piza orders</p>
+                                        
+                                        <span class="coupon">Pizza40</span>
+                                        <div class=" text-end mx-auto">
+                                            <button class="btn btn-warning btn-sm px-4 rounded-pill order-button">
+                                                Order Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="card offer-card d-flex flex-column">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <img src="images/burger.png">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <h3>Buy Two Get One Free</h3>
+                                        <p>Applicable Only For Burgers</p>
+                                        <span class="coupon">2Burger1</span>
+                                        
+                                        <div class=" text-end mx-auto">
+                                            <button class="btn btn-warning btn-sm px-4 rounded-pill order-button">
+                                                Order Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <div class="card offer-card d-flex flex-column">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <img src="images/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai.jpg" style="width:200px;">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <h3>₹150 OFF</h3>
+                                        <p>On orders above ₹599</p>
+                                        <span class="coupon">ACGH150</span>
+                                        
+                                        <div class=" text-end mx-auto">
+                                            <button class="btn btn-warning btn-sm px-4 rounded-pill order-button">
+                                                Order Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-right col-lg-5">
+                            <div class="featured-offer text-center mx-auto text-end">
+
+                                <img src="images/offer.jpg" class="img-fluid mb-3" alt="Pizza">
+                                <h2>Up to 50% OFF</h2>
+                                <p>On your first order</p>
+                                <span class="coupon">FIRST50</span>
+
+                                <br><br>
+
+                                <button class="btn btn-warning rounded-pill px-4 order-button">
+                                    Order Now
+                                </button>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer mt-5">
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-lg-4 col-md-6">
+                            <h3 class="footer-logo">
+                                <i class="fa-solid fa-pizza-slice"></i>
+                                Foodie
+                            </h3>
+                            <p class="footer-text">
+                                Delicious food delivered to your doorstep.
+                                Explore your favourite restaurants and enjoy
+                                fresh meals anytime, anywhere.
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <h5>Quick Links</h5>
+                            <ul class="footer-links">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#category">Categories</a></li>
+                                <li><a href="#restaurant">Restaurants</a></li>
+                                <li><a href="#offer">Offers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h5>Contact</h5>
+                            <p>
+                                <i class="bi bi-geo-alt-fill"></i>
+                                Kochi, Kerala
+                            </p>
+                            <p>
+                                <i class="bi bi-envelope-fill"></i>
+                                support@foodie.com
+                            </p>
+                            <p>
+                                <i class="bi bi-telephone-fill"></i>
+                                +91 98765 43210
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h5>Follow Us</h5>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-center copyright">
+                        © 2026 Foodie. All Rights Reserved.
+                    </div>
+
+                </div>
+
+            </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const locationBtn = document.getElementById("locationBtn");
+
+                document.querySelectorAll(".dropdown-item").forEach(item => {
+                    item.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        locationBtn.textContent = this.textContent;
+                    });
+                });
+        </script>
+    </body>
+</html>

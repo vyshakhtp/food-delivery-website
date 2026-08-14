@@ -1,0 +1,694 @@
+body{
+    overflow-x: hidden;
+    background:linear-gradient(180deg,#FFF8E8 0%,#FFFDF8 100%);
+    font-family:'Poppins',sans-serif;
+    color:#222;
+}
+
+.navbar{
+    background:#ffffff !important;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.navbar-brand{
+    color:#FF6B35;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.navbar-brand i{
+    color:#FF6B35;
+}
+
+.nav-link{
+    color:#444 !important;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#FF6B35 !important;
+}
+
+#home{
+    /* background:linear-gradient(135deg,#FFF5E6,#FFE7CC); */
+    min-height:100vh;
+    padding:5px 20px;
+}
+
+#home .back-img{
+    top:45px;
+    background-image: url("images/food-delivery.png");
+    background-size:contain;
+    background-position:center;
+    min-height:60vh;
+    
+}
+
+
+
+#home .home-content{
+    top:55px;
+    color:white;
+    left:15%;
+}
+
+.home-content h3{
+    font-size:55px;
+    font-weight:700;
+}
+
+.home-content p{
+    font-size:18px;
+}
+
+.search-form{
+    position:absolute;
+    top:250px;
+    left:15%;
+    width:400px;
+    transform:translate(-50%,-50%);
+    z-index:1000;
+}
+
+.search-form button{
+    background:#FF6B35;
+    border:none;
+    color:white;
+    font-weight:600;
+    width:150px;
+    font-size:12px;
+}
+
+.search-form button:hover{
+    background:#E85D04;
+}
+
+.top-cat{
+    margin:0px;
+    padding:20px;
+}
+
+.top-cat-title{
+    color:#222;
+    top:50px;
+    position:relative;
+    font-weight:700;
+}
+
+
+.category-card{
+    background:#FFF9F4;
+    border-radius:15px;
+    border:none;
+    padding:20px 10px;
+    transition:0.3s;
+    cursor:pointer;
+    top:50px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.category-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 20px 50px rgba(255,107,53,.25);
+}
+
+.category-card img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    transition:.4s;
+}
+
+.category-card:hover img{
+    transform:scale(1.12) rotate(5deg);
+}
+
+.category-card h5{
+    margin-top:15px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.location-box{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    width:220px;
+    padding:5px 15px;
+    
+}
+
+.location-box i{
+    color:#FF6B35;
+    font-size:20px;
+}
+
+.location-text{
+    display:flex;
+    flex-direction:column;
+    color:#333;
+    font-weight:600;
+}
+
+.location-text small{
+    color:#777;
+    font-size:13px;
+}
+
+#LocationBtn{
+    font-family:'Poppins',sans-serif !important;
+}
+
+.popular-rest{
+    top:50px;
+    padding:30px 10px;
+    
+}
+
+
+.rest-card{
+    background:#FFF9F4;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.rest-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 20px 50px rgba(255,107,53,.25);
+}
+
+.rest-card img{
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.rest-card .card-body{
+    padding: 20px;
+}
+
+.rest-card h5{
+    margin-bottom: 8px;
+}
+
+.offer-title{
+    padding:10px 5px;
+    text-align: center;
+}
+
+.hero-content{
+    padding-top: 0px;
+    padding-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px
+}
+
+.title{
+    padding-top:24px;
+    font-size:20px;
+    font-weight:bold;
+}
+.title-card{
+    border-radius:30px;
+    padding:50px;
+    
+}
+
+#title{
+    font:30px;
+}
+
+.offer-title{
+    display:flex;
+    justify-content:center;
+}
+.offer-card{
+    background:#FFF9F4;
+    padding:10px 10px;
+    width:700px;
+    display:flex;
+    border:none;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.offer-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+.offer-card h3{
+    color:#FF6B35;
+    font-weight: bold;
+}
+.order-button:hover{
+    background:#E85D04;
+}
+
+#offer{
+    display:box;
+    /* align-items:center;
+    justify-content:center; */
+    padding: 20px;
+    gap:20px;
+    background:#FFF4E6;
+}
+
+.offer-card-box{
+    gap:40px;
+    padding:20px;
+}
+
+.offer-right{
+    gap:40px;
+    padding:20px;
+}
+.offer-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.featured-offer{
+    background:#FFF9F4;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.featured-offer:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.featured-offer img{
+    width:220px;
+}
+
+.featured-offer h2{
+    color:#ff6b35;
+    font-weight:bold;
+    height:100px;
+}
+
+.coupon{
+    display:inline-block;
+    padding:8px 20px;
+    border:2px dashed #ff6b35;
+    border-radius:8px;
+    color:#ff6b35;
+    font-weight:bold;
+}
+
+.footer{
+    background:#1F2937;
+    color:white;
+    padding:60px 0 20px;
+}
+
+.footer-logo{
+    color:#FF6B35;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.footer-logo i{
+    margin-right:8px;
+}
+
+.footer-text{
+    color:#d1d5db;
+    line-height:1.8;
+}
+
+.footer h5{
+    color:#ffffff;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.footer-links{
+    list-style:none;
+    padding:0;
+}
+
+.footer-links li{
+    margin-bottom:10px;
+}
+
+.footer-links a{
+    color:#d1d5db;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#FF6B35;
+    padding-left:5px;
+}
+
+.footer p{
+    color:#d1d5db;
+    margin-bottom:12px;
+}
+
+.footer p i{
+    color:#FF6B35;
+    margin-right:10px;
+}
+
+.social-icons a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:45px;
+    height:45px;
+    background:#374151;
+    color:white;
+    border-radius:50%;
+    margin-right:10px;
+    text-decoration:none;
+    transition:.3s;
+    font-size:20px;
+}
+
+.social-icons a:hover{
+    background:#FF6B35;
+    transform:translateY(-5px);
+}
+
+.footer hr{
+    border-color:#4b5563;
+    margin:40px 0 20px;
+}
+
+.copyright{
+    color:#9ca3af;
+    font-size:14px;
+}
+
+
+/* ===========================
+   Tablet (768px and below)
+=========================== */
+@media (max-width:768px){
+
+    .home-content{
+        left:20%;
+        top:80px;
+    }
+
+    .home-content h3{
+        font-size:32px;
+    }
+
+    .home-content p{
+        font-size:16px;
+    }
+
+    .search-form{
+        position:absolute;
+        top:220px;
+        left:40%;
+        width:90%;
+        max-width:450px;
+        transform:translateX(-50%);
+        gap:10px !important;
+    }
+
+    .search-form input{
+        font-size:14px;
+    }
+
+    .search-form button{
+        width:120px;
+        font-size:14px;
+    }
+
+    .back-img{
+        min-height:70vh;
+        background-size:cover;
+    }
+
+    .location-box{
+        margin:15px 0;
+    }
+
+    .offer-card{
+    width:100%;
+}
+
+.offer-card h3{
+    font-size:22px;
+}
+
+.offer-card p{
+    font-size:15px;
+}
+
+.featured-offer{
+    margin-top:40px;
+}
+
+.offer-right{
+    margin-top:40px;
+}
+}
+
+
+/* ===========================
+   Mobile (576px and below)
+=========================== */
+@media (max-width:576px){
+
+   #home{
+
+    padding:10px;
+}
+
+#home .back-img{
+    background: url("food-delivery.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    border-radius: 25px;
+
+    padding: 60px;
+    min-height:520px;
+
+    padding:25px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.home-content{
+
+    
+     display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+    height:100%;
+
+    text-align:center;
+}
+
+.home-content h3{
+
+    font-size:14px;
+
+    margin-bottom:5px;
+}
+
+.home-content p{
+
+    font-size:8px;
+
+    margin-bottom:5px;
+}
+
+.search-form{
+
+    margin-top:45px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    width:90%;
+}
+
+.search-form input{
+
+    width:100%;
+
+    height:50px;
+}
+
+.search-form button{
+
+    width:100%;
+
+    height:50px;
+
+    font-size:18px;
+}
+
+.search-form input,
+.search-form button{
+
+    width:100%;
+}
+
+.search-form button{
+
+    height:50px;
+}
+    .navbar-brand{
+        font-size:22px;
+    }
+
+    .location-box{
+        justify-content:center;
+        margin:15px 0;
+    }
+
+    .navbar-nav{
+        text-align:center;
+    }
+    /* Offer Section */
+
+.offer-card{
+
+    width:100%;
+    padding:15px;
+}
+
+.offer-card .row{
+
+    text-align:center;
+}
+
+.offer-card img{
+
+    max-width:150px;
+    margin:0 auto 15px;
+}
+
+.offer-card h3{
+
+    font-size:22px;
+}
+
+.offer-card p{
+
+    font-size:14px;
+}
+
+.coupon{
+
+    display:inline-block;
+    margin:12px 0;
+}
+
+.order-button{
+
+    width:100%;
+    margin-top:15px;
+}
+
+.offer-right{
+
+    margin-top:35px;
+}
+
+.featured-offer{
+
+    padding:25px;
+    text-align:center;
+}
+
+.featured-offer img{
+
+    max-width:180px;
+}
+
+.featured-offer h2{
+
+    font-size:28px;
+    height:auto;
+}
+
+.offer-title h1{
+
+    font-size:32px;
+}
+}
+
+#home{
+    padding:40px 20px;
+}
+
+.back-img{
+
+    background:url("food-delivery.png");
+    background-size:cover;
+    background-position:center;
+    border-radius:25px;
+
+    min-height:600px;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:100px;
+}
+
+.home-content{
+
+    color:white;
+    max-width:500px;
+}
+
+.home-content h3{
+
+    font-size:60px;
+    font-weight:700;
+}
+
+.home-content p{
+
+    font-size:20px;
+}
+
+.search-form{
+
+    margin-top:30px;
+    max-width:500px;
+    margin-left:140px;
+    
+}
+
+.search-form input{
+
+    height:55px;
+}
+
+.search-form button{
+
+    width:170px;
+    background:#FF6B35;
+    color:white;
+}
